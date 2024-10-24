@@ -185,7 +185,7 @@ function comprarPlanta(plantas){
         else if (existeOrquidea){
             alert(`Has agregado al carrito "${existeOrquidea.nombre}" .Precio $${existeOrquidea.precio} y cuidado "${existeOrquidea.cuidado}"`);
         }
-        else if( opcion === "Lista de productos"){
+        else if( opcion === "Lista de productos".toLowerCase()){
             listaDeProductos(plantas);
         }
         else{
@@ -247,6 +247,7 @@ function datosDeCompra (datos){
 
 
 principal();
+
 
 
 
