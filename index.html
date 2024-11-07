@@ -3,13 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <head>
+        <h1>Mi tienda de Plantas</h1>
+        <nav class="navBar">
+            <ul>
+            <li>Inicio</li>
+            <li>Productos</li>
+            <li>Sucursales</li>
+            <li>
+                <a href="carrito.html" class="carrito">
+                    <img src="./assets/carrito-de-compras.png" alt="Carrito de compras">
+                    Carrito <span id="numero" class="carritoNumerito">0</span>
+                </a>
+            </li>
+            </ul>
+        </nav>
+    </head>
+    <main>
+        <section id="contenedorCards" class="contenedorCards" >
+
+        </section>
+        <section class="contenedorProductosCarrito">
 
 
+        </section>
+    </main>
 
-    <script src="./js/index.js"></script>
+    <footer>
+
+    <p class="footer" > <img src="./assets/copyright.png" alt="copyright">misitiode@plantas.com.ar</p>
+    </footer>
+
+    <script type="module" src="js/app.js" ></script>
+    <script  type="module" src="./js/carrito.js"></script>
+    <script type="module" src="js/actualizacion.js" ></script>
 </body>
 </html>

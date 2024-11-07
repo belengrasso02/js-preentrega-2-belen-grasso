@@ -1,0 +1,120 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box; }
+
+body{
+    background-image: url(../assets/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navBar{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 1.875rem;
+    position: sticky;
+    top: 0;
+    background-color: rgba(15, 104, 15, 0.281);
+    cursor: pointer;
+
+}
+.navBar ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+    list-style-type: none;
+}
+.navBar li:hover{
+    transform: scale(1.2);
+}
+
+
+
+h1{
+    color: white;
+    text-align: center;
+    padding: 2.5rem;
+    font-family:cursive;
+
+}
+.contenedorCards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+.card{
+    width: 12.5rem;
+    height: 18.75rem;
+    border-radius: .3125rem;
+    border: .3125rem solid black;
+    align-items: end;
+    color: white;
+    gap: 3.125rem;
+    margin: 1.25rem;
+}
+
+
+.cardImg{
+    width: 100%;
+}
+
+.cardBody{
+    background-color: rgba(15, 104, 15, 0.489);
+    border-radius: 0.5rem;
+    margin-top: -6.3rem;
+    position:relative;
+    text-align: center;
+    font-size: .9375rem;
+    object-fit: contain;
+}
+.cardBodyImagenCorta{
+    margin-top: -4.3rem;
+    position:relative;
+}
+
+.botonComprar{
+    cursor: pointer;
+    margin: .625rem;
+    padding: .3125rem;
+    width: 80%;
+} 
+.precioCard{
+    padding: .3125rem;
+}
+
+.botonComprar:hover{
+    color: white;
+    background-color: black;
+    border: solid 2px white;
+    transition-duration: 700ms ;
+}
+.carrito{
+    margin-left: 1.875rem;
+    background-color: transparent;
+    border-color: transparent;
+
+}
+.carrito a, .navBar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    color: white;
+    padding: .9375rem;
+    display: flex;
+    justify-content: end;
+    gap: .625rem;
+}
+.carritoVacio{
+    color: white;
+    padding: .9375rem;
+    display: flex;
+    justify-content: center;
+    gap: .625rem;
+}
+.carritoVacio p{
+    font-size: 1.25rem;
+}
