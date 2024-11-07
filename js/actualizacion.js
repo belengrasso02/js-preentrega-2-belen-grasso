@@ -43,14 +43,14 @@ let plantas = [{
 },
 ]
 
-
+console.log(cargarProductos);
 
 
 export function cargarProductos (){
-    const listaDeProductos = document.getElementById("contenedorCards");
+    const listaDeProductos = document.querySelector("#contenedorCards");
 
 
-    plantas.forEach( planta =>{
+    plantas.forEach( (planta) =>{
         
         const div = document.createElement("div");
         div.classList.add ("card");
@@ -61,10 +61,12 @@ export function cargarProductos (){
                         <h2 class="tituloCard" >${planta.nombre}</h2>
                     <p class="precioCard">$ ${planta.precio}</p>
                 <button class="botonComprar" id="${planta.id}">Comprar</button>
-        `
+        `;
         listaDeProductos.append(div);
-    })
-}
+    });
+    
+};
+
 
 
 export function actualizarListaDeCarrito (){
